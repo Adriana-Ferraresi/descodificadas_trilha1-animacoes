@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap');
+
+* {
+    font-family: 'Mountains of Christmas', serif;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 100wh;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background: linear-gradient(179.1deg, rgb(43, 170, 96) 2.3%, rgb(129, 204, 104) 98.3%);
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+h1 {
+    color: #a10707;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    color: #a10707;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.coracao {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.wrapper {
+    animation: pulse 1s infinite;
+    position: relative;
+}
+
+.pulse {
+    animation: pulse 0.7s infinite;
+    margin: 0 auto;
+    display: table;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        filter: brightness(100%);
+    }
+
+    100% {
+        transform: scale(1.1);
+        filter: brightness(200%);
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        -webkit-filter: brightness(100%);
+    }
+
+    100% {
+        -webkit-transform: scale(1.1);
+        -webkit-filter: brightness(200%);
+    }
+}
